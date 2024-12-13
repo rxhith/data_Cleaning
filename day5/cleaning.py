@@ -7,7 +7,7 @@ valid_capabilities = [
     "role clarity",
     "bc/dr plan",
     "metrics and measurement",
-    "edr,xdr"
+    "edr/xdr"
 ]
 
 valid_consequences = [
