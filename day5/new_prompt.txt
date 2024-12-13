@@ -1,0 +1,130 @@
+# Objective:
+Generate synthetic `control_name` entries that align with a chosen **Capability** and **Consequence** from the respective lists provided below, with a priority on the following consequences but not necessarily creating controls with consequences pretaining to only this:
+
+IP Theft
+OT-IoT Failure
+Physically Exposed
+
+
+---
+
+# Instructions:
+1. **Select a Capability**:  
+   - Choose one Capability from the provided **Capabilities List**.  
+
+2. **Select a Consequence**:  
+   - Choose one Consequence from the provided **Consequences List**.  
+
+3. **Generate a Control Name**:  
+   - Create a `control_name` statement that clearly reflects the main action or requirement related to the chosen Capability.  
+   - Ensure that the action directly addresses or mitigates the impact of the chosen Consequence.  
+
+4. **Output Format**:  
+   - Present the results in a table with the following 3 columns:  
+     - **Control Name**: A clear, specific, and actionable security measure.  
+     - **Capability**: The selected capability from the list.  
+     - **Consequence**: The inferred or addressed consequence.  
+   - The table should have at least **50 rows** of unique `control_name` entries.  
+
+---
+
+# Capabilities List:
+-User Training
+-Supply Chain Risk Management
+-Role Clarity
+-Business Continuity (BC) and Disaster Recovery (DR) Plan
+-Metrics and Measurement
+-Endpoint Detection and Response (EDR) & Extended Detection and Response (XDR)
+
+
+# Consequences List:
+-data loss
+-ip theft
+-low quality product
+-ot-iot failure
+-pervasive visibility
+-physically exposed
+-privacy breach
+-ransom
+-reputation hit
+-resource theft
+-service degradation
+-third-party failure
+
+---
+
+# Writing Guidelines (For Control Name Generation Responses)  
+
+1. **Use simple language**  
+   - Write control names in plain, simple terms with short, clear sentences.  
+   - Example: "Restrict access to admin accounts."  
+   - Avoid: "Enable advanced role-based access management for all hierarchical account levels."  
+
+2. **Avoid AI-giveaway phrases**  
+   - Avoid overused LLM-style phrases like "Let's dive into" or "Here's a comprehensive overview."  
+   - Avoid: "Let's explore how we can secure system access."  
+   - Use Instead: "Limit system access to verified users only."  
+
+3. **Be direct and concise**  
+   - Get straight to the point. Avoid adding unnecessary words.  
+   - Example: "Log every admin action."  
+   - Avoid: "To increase system visibility, ensure that every administrative action is logged in detail."  
+
+4. **Maintain a natural tone**  
+   - Write control names as if you were explaining them to a teammate.  
+   - Example: "Track unusual login attempts."  
+   - Avoid: "Advanced tracking of potentially unusual user login behaviors must be enforced."  
+
+5. **Avoid marketing language**  
+   - Do not use hype or promotional-style language. Stick to clear, practical instructions.  
+   - Avoid: "Use a revolutionary, state-of-the-art encryption method."  
+   - Use Instead: "Encrypt sensitive files with AES-256."  
+
+6. **Keep it real**  
+   - Be honest, realistic, and clear. Avoid overly technical or unnecessary complexity.  
+   - Example: "Use encryption to secure stored data."  
+   - Avoid: "Implement a highly secure, military-grade encryption system to protect data at rest."  
+
+7. **Simplify grammar**  
+   - Don’t overthink grammar. Control names can be short, even fragments.  
+   - Example: "Restrict access to critical files."  
+   - Avoid: "Ensure that there is a restricted access policy in place for all files deemed critical."  
+
+8. **Stay away from fluff**  
+   - Avoid unnecessary adjectives, adverbs, and vague descriptions.  
+   - Example: "Limit access to admin tools."  
+   - Avoid: "Carefully restrict and manage administrative access to key system tools for better security."  
+
+9. **Focus on clarity**  
+   - Make the control name easy to understand at first glance.  
+   - Example: "Limit login attempts to 3 per hour."  
+   - Avoid: "Establish a login attempt throttling policy to reduce the risk of brute-force attacks."  
+
+---
+# Example Output (Table Format)  
+
+
+
+| # | Control Name | Capability | Consequence |
+|---|--------------|------------|-------------|
+| 1 | Train staff to spot and report suspicious emails | User Training | Privacy Breach |
+| 2 | Regularly audit third-party software for vulnerabilities | Supply Chain Risk Management | Third-Party Failure |
+| 3 | Define roles for IoT device management in manufacturing | Role Clarity | OT-IoT Failure |
+| 4 | Develop a DR plan to recover operations within 24 hours | bc/dr Plan | Service Degradation |
+| 5 | Measure endpoint detection response times monthly | Metrics and Measurement | Pervasive Visibility |
+| 6 | Use edr,xdr to monitor and block high-risk external connections | edr,xdr | Resource Theft |
+| 7 | Deploy edr,xdr to detect and respond to lateral movement attacks | edr,xdr | Ransom |
+| 8 | Create regular training on secure IoT practices | User Training | Physically Exposed |
+| 9 | Require supply chain partners to meet security benchmarks | Supply Chain Risk Management | Reputation Hit |
+| 10 | Track key metrics for product quality in development stages | Metrics and Measurement | Low-Quality Product |
+
+
+
+---
+
+
+# Important Notes  
+- **Control Names** should be specific, actionable, and relevant to real-world cybersecurity practices.  
+- Use a **variety of Capabilities and Consequences** to create diverse and meaningful entries.  
+- The table should have **at least 50 unique rows**, but the more diverse, the better.  
+
